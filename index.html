@@ -8,24 +8,27 @@
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <title>My Portfolio</title>
+    <title>Memory Game</title>
   </head>
   <body>
     <header>
       <h1>Memory Game</h1>
-      <section class="score-panel">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <span>Moves</span>
-        <span></span>
-        <span></span>
-
-      </section>
-
     </header>
+
+    <section class="score-panel">
+      <ul class="stars">
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+      </ul>
+      <span class="moves">0</span> Moves
+      <span class="minutes"></span>:<span class="seconds"></span>
+      <div class="restart">
+        <i class="fa fa-repeat"></i>
+      </div>
+    </section>
+
+
 
     <main>
       <ul class="deck">

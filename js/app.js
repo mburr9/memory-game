@@ -115,7 +115,7 @@ allCards.each(function() { // goes through each card with the class .card
               endGame(); // pop up announcing the end of the game
             };
           };
-        }, 1500);
+        }, 1200);
       }
     }
   });
@@ -170,7 +170,7 @@ function moveCounter() {
 * @param {number} moves - The number of moves made in the game
 */
 function stars(moves) {
-  if (moves === 12 || moves === 15) {
+  if (moves === 14 || moves === 17) {
     $('.fa-star').last().toggleClass('fa-star');
   }
 };

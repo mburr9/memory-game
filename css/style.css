@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #ffffff url('../images/abstract.png');
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.score-panel {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.stars {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.stars li {
+  display: inline-block;
+}
+
+.minutes, .moves {
+  margin-left: 5px;
+}
+
+.restart {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+main {
+  width: 100%;
+}
+
+.deck {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 21px;
+  background: linear-gradient(135deg, #f3f2dd, #eaa86b);
+  border-radius: 5%;
+  padding: 5px;
+  box-shadow: 10px 10px 5px 0px rgba(87,82,85,1);
+}
+
+.deck .card {
+  width: 67.5px;
+  height: 67.5px;
+  background: #b1526f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 0;
+  border-radius: 10% 25%;
+  transition: background 1s, transform 1s;
+}
+
+.deck .card.open {
+  transform: rotateY(0);
+  cursor: default;
+  background: #e26b92;
+}
+
+.deck .card.show {
+  font-size: 1em;
+}
+
+.deck .card.match {
+  transform: rotateY(360deg);
+  background: #9d73c7;
+  cursor: default;
+  font-size: 1em;
+}
